@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dragable-css/dragable-list-style.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Kanban</title>
+    <!----------------- header link  --------------------->
+    <!-- style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="header/css/material-design-icons/material-design-icons.css" type="text/css" />
+    <link rel="stylesheet" href="header/css/ionicons/css/ionicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="header/css/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+    <link rel="stylesheet" href="header/css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css css/styles/app.min.css -->
+    <link rel="stylesheet" href="header/css/styles/app.css" type="text/css" />
+    <link rel="stylesheet" href="header/assets/css/zenTaskStyle.min.css" type="text/css" />
+
+    <!-- jQuery -->
+    <script src="header/libs/jquery/dist/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="header/libs/bootstrap/dist/js/bootstrap.js"></script> -->
+    <!--Search
+
+
+    <! ----------------- header link  end--------------------->
+</head>
+
+<body>
+
+    <!-------------------- header section part ---------------------------->
+    <div class="app-header white bg b-b">
+        <div class="navbar p-l-xs p-r-xs">
+            <!-- ############ SWITHCHER START-->
+            <div id="switcher">
+                <div class="switcher dark-white" id="sw-theme">
+                    <a class="expand-menu" data-target="folded" data-act=""> <i class="ion-navicon"></i> </a>
+                </div>
+            </div>
+            <!-- ############ SWITHCHER END-->
+            <a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up p-r m-a-0"> <i class="ion-navicon"></i> </a>
+            <a href="" class="navbar-brand"> 
+                <ul class="nav navbar-nav m-r-lg m-r-sm">
+                    <li class="nav-item pos-stc-xs">
+                        <a class="nav-link" data-toggle="modal" data-target="#modal-new" title="Reply"> <span class="p-a-sm grey-lt r-2x"></span></a>
+                    </li>
+                </ul>
+                <div class="col-md-7" style="padding-top: 3px;">
+                    <div class="input-group sidebarForm">
+                        <input type="text" name="" id="f1_search_text" class="form-control" placeholder="Enter text to search" autocomplete="off"> </div>
+                    <div id="quick_srch_main_div"></div>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="nav-item pos-stc-xs" id="get_pre_task" title="Pre Tasks">
+                        <a class="nav-link clear"> <i class="ion-ios-list-outline w-24"></i> </a>
+                    </li>
+                    <li class="nav-item m-l-xs">
+                        <a class="nav-link text-muted" title="Shingora Technologies Private Limited"> <span class="hidden-sm-down text-sm">Company Name</span> </a>
+                    </li>
+                </ul>
+        </div>
+    </div>
+    <!-------------------- header section part  end---------------------------->
+
+    <!--------------------- aside start--------------------->
+    <div id="aside" class="app-aside nav-dropdown black folded">
+        <div class="navside zen-bg" data-layout="column">
+            <div data-flex="" class="">
+                <nav class="scroll nav-stacked nav-stacked-rounded nav-color">
+                    <ul class="nav" data-ui-nav="">
+                        <li title="Dashboard" class="active">
+                            <a href="#!" class=""> <span class="nav-icon fade" style="background-color: #4caf50;opacity: 1;color: #fff;">
+                                    <i class="ion-ios-speedometer text-lg"></i>
+                                </span> <span class="nav-text">Dashboard</span> </a>
+                        </li>
+                        <li title="Create Task">
+                            <a href="#!" class=""> <span class="nav-icon fade">
+                                    <i class="ion-plus-circled text-lg" style="top: 1px;"></i>
+                                </span> <span class="nav-text">Create Task</span> </a>
+                        </li>
+                        <li title="Create Task">
+                            <a href="#!" class=""> <span class="nav-icon fade">
+                                    <i class="ion-plus-circled text-lg" style="top: 1px;"></i>
+                                </span> <span class="nav-text">Create000 Feature</span> </a>
+                        </li>
+                        <li class="rec_tk_li" title="Recurring Task">
+                            <a href="#!" class=""> <span class="nav-icon">
+                                    <i class="ion-loop text-lg"></i>
+                                </span> <span class="nav-text">Recurring Task</span> </a>
+                        </li>
+                        <li title="Task Conversation">
+                            <a href="#!" class=""> <span class="nav-icon">
+                                    <i class="material-icons md-24 text-lg">message</i>
+                                </span> <span class="nav-text">Conversation</span> </a>
+                        </li>
+                        <li title="Reporting">
+                            <a href="#!" class=""> <span class="nav-icon">
+                                    <i class="ion-ios-copy text-lg"></i>
+                                </span> <span class="nav-text">Reporting</span> </a>
+                        </li>
+                        <li class="hide times_rec_li" title="Time Reporting">
+                            <a href="#!" class=""> <span class="nav-icon">
+                                    <i class="ion-ios-copy text-lg"></i>
+                                </span> <span class="nav-text">Time Reporting</span> </a>
+                        </li>
+                        <li title="Setting">
+                            <a href="#!" class=""> <span class="nav-icon"><i class="ion-settings text-lg"></i></span>
+                                <span class="nav-text">Setting</span> </a>
+                        </li>
+                        <li title="More">
+                            <a href="#!" class=""> <span class="nav-icon">
+                                    <i class="ion-grid text-lg"></i></span> <span class="nav-text">More</span> </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="nav-fold dropup">
+                <a data-toggle="dropdown">
+                    <div class="pull-left">
+                        <div class="inline"><span class="avatar w-40 green-500">AD</span></div>
+                    </div>
+                    <div class="clear hidden-folded p-x"> <span class="block _500 text-muted">Admin</span>
+                        <div class="progress-xxs m-y-sm lt progress">
+                            <div class="progress-bar green-500" style="width: 100%;"> </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="dropdown-menu w dropdown-menu-scale ">
+                    <a class="dropdown-item" href="#!"> <span>Profile</span> </a>
+                    <a class="dropdown-item" href="#!"> <span>Company Profile</span> </a>
+                    <a class="dropdown-item" href=""> <span>My Account</span> </a>
+                    <a class="dropdown-item" href="#!"> <span>Setting</span> </a>
+                    <a class="dropdown-item" href="#!"> <span>API</span> </a>
+                    <div class="dropdown-divider"></div> <a class="dropdown-item" href="#!">
+                        Need help?
+                    </a>
+                    <form method="POST" action="logout" id="logout_frm">
+                        <input name="do" type="hidden" value="logout"> </form> <a class="dropdown-item" href="javascript:void(0);" id="mylogout">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------- aiside end--------------------->
+
+    <!--------------------- list section part draggable --------------------->
+
+    <div id="main" class="clearfix" style="margin-left:50px;">
+        <div class="listt">
+            <div class="title removable editable">This is a list</div>
+            <div class="content">
+                <div class="cardt removable editable">This is a card</div>
+                <div class="cardt removable editable">This is a card</div>
+                <div class="cardt removable editable">Look, another card!</div>
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+        <div class="listt">
+            <div class="title removable editable">Another list</div>
+            <div class="content">
+                <div class="cardt removable editable">Hello world!</div>
+            </div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+        <div class="listt">
+            <div class="title removable editable">Empty list</div>
+            <div class="content"></div>
+            <div class="add-card editable">Add another card</div>
+        </div>
+    </div>
+    <div class="add-list">
+        <div class="title editable ScrollRight">Add another list</div>
+    </div>
+    <!--------------------- list section part draggable end--------------------->
+</body>
+<script>
+    $(document).ready(function() {
+        $("#switcher").click(function() {
+            var aside = $('#aside').hasClass('folded');
+            if (aside) {
+                $("#main").css('margin-left', '177px');
+                $("#main").css('transition', '0.5s');
+
+                $(".app-footer").css('margin-left', '190px');
+                $(".app-footer").css('transition', '0.5s');
+            } else {
+                $("#main").css('margin-left', '50px');
+                $("#main").css('transition', '0.5s');
+                $(".app-footer").css('margin-left', '64px');
+                $(".app-footer").css('transition', '0.5s');
+            }
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="dragable-js/drag.js"></script>
+<!--------------------- header section part script --------------->
+<script src="header/libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+<script src="header/libs/PACE/pace.min.js"></script>
+<!-- <script src="header/libs/jscroll/jquery.jscroll.min.js"></script> -->
+<script src="header/scripts/ui-load.js"></script>
+<script src="header/scripts/app.js?time={!!time()!!}"></script>
+<script src="header/assets/scripts/scale.min.js"></script>
+<!--------------------- header section part script end --------------->
+
+</html>

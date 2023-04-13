@@ -1,0 +1,89 @@
+body {
+    /* background-color: #58ba41c7 !important; */
+}
+
+.sidebarForm {
+    margin-top: 7px !important;
+}
+
+.cardt {
+    margin-bottom: 0px !important;
+}
+
+
+/* .initial {
+    position: relative !important;
+    top: 50px !important;
+} */
+
+.m-50 {
+    margin-top: 10px !important;
+}
+
+
+/* .pending {
+    position: relative !important;
+    top: 50px !important;
+} */
+
+.main-parent-with-add-card {
+    /* margin-left: 60px; */
+}
+
+
+/*------------- header css -------------*/
+
+@font-face {
+    font-family: "Century Gothic";
+    font-variant: normal;
+    font-weight: normal;
+    src: url("#FontID0") format(svg)
+}
+
+.fil0 {
+    fill: #565658
+}
+
+.fil1 {
+    fill: #76C04E
+}
+
+.fnt0 {
+    font-weight: normal;
+    font-size: 1956.48px;
+    font-family: 'Century Gothic'
+}
+
+.help_widget {
+    font-size: 12px;
+    color: #353535;
+    cursor: pointer;
+    padding: 11px 9px;
+    border-radius: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.help_widget:hover {
+    color: #fff;
+    background: #71bf45;
+}
+
+.initial {
+    margin-top: 68px !important;
+}
+
+#mrginy .etitable {
+    margin-top: 68px !important;
+}
+
+#main .pending {
+    margin-top: 6px !important;
+}
+
+.pending {
+    margin-top: 68px !important;
+}
+
+
+/*------------- header css  end-------------*/

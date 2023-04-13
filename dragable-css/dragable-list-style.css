@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #172b4d;
+    background-color: #f2f6ff;
+    display: flex;
+    align-items: start;
+    font-size: 15px;
+}
+
+div {
+    border-radius: 3px;
+}
+
+#main {
+    display: flex;
+    align-items: start;
+    margin-top: 3rem;
+    /* position: relative;
+    top: 50px; */
+}
+
+.title {
+    font-weight: 600;
+    margin: 7px;
+    padding: 10px;
+}
+
+.editable {
+    user-select: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    color: #181818;
+}
+
+.editing {
+    background: white;
+    color: #172b4d !important;
+    box-shadow: inset 0px 0px 0px 2px rgb(89 186 65);
+}
+
+.editing:hover {
+    background: white !important;
+}
+
+.cardt {
+    background: white;
+    /*border-bottom: 1px solid #aaa;*/
+    border: 1px solid lightgray;
+    margin: 7px;
+    padding: 8px;
+    cursor: pointer !important;
+}
+
+.listt {
+    /*   padding: 7px; */
+    min-width: 273px;
+    margin: 20px 10px;
+    /* position: relative; */
+    background: #ffffff;
+    border-top: 4px solid #6abd6ebf;
+    /*box-shadow: 0px 1px 7px rgb(0 0 0 / 15%), 0px 1px 7px rgb(0 0 0 / 10%);*/
+     resize: horizontal;
+    overflow: auto;
+}
+
+.add-list {
+    min-width: 280px;
+    margin: 10px 5px;
+    top: 58px;
+    position: relative;
+    background: #fff;
+    color: hsla(0, 0%, 100%, .8);
+    border-top: 4px solid #6abd6ebf;
+}
+
+.ghost {
+    opacity: .1;
+    color: #000;
+    background-color: #000;
+}
+
+.add-card {
+    width: calc(100% - 35px);
+    display: inline-block;
+    padding: 6px !important;
+    margin-top: 0px;
+    color: gray;
+    text-decoration: none;
+    margin: 7px;
+    padding: 10px;
+    /*   border-bottom: 1px solid #dfe1e6; */
+}
+
+.add-card:hover {
+    background-color: rgba(9, 30, 66, .13);
+}
+
+.del {
+    font-weight: 600;
+    color: gray;
+    float: right;
+}
+
+.content {
+    /*border-bottom: 1px solid #cecece;*/
+    max-height: 450px !important;
+    overflow: auto;
+    /* text-shadow: 0 0 black; */
+    transition: color .3s ease;
+    padding: 0px 0px;
+}
+
+.content::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.content::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+.content::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: rgba(180, 179, 179, 0.795);
+}
